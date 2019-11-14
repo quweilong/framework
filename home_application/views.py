@@ -37,4 +37,5 @@ def helloword(request):
     """
     联系我们
     """
+    a = 1
     return render_mako_context(request, '/home_application/helloword.html')
