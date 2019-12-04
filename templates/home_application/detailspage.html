@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <link href="https://magicbox.bk.tencent.com/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/assets/echarts-2.0/echarts-all.js"></script>
+    <script src="https://magicbox.bk.tencent.com/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="http://magicbox.bk.tencent.com/static_api/analysis.js"></script>
+</head>
+<style>
+       .div-a{float:left;width:45%;height:30%; margin-left:40px;  }
+       .div-b{float:left;width:45%;height:30%;margin-left:40px; }
+       .div-c{float:left;width:45%;height:30%; margin-left:40px; }
+       .div-d{float:left;width:45%;height:30%; margin-left:40px; }
+       .div-e{float:left;width:95%;height:30%;margin-left:30px; }
+
+   </style>
+<body class="" >
+        <div>
+            <p align="center" style="font-size: 30px;">设备监控图</p>
+        </div>
+        <div class="div-a">
+           <div class="king-block king-block-themed bk-ranger-box mb10" id="list_1574215070828">
+                            <div class="king-block-header king-success">
+                                <h3 class="king-block-title pt10 pb10">
+                                    <span class="fa fa-star-half-full mr5" ></span>硬件状态</h3>
+                            </div>
+                            <div class="ranger-wrapper">
+
+                                <div style="height:220px; overflow: auto;" class="ranger-box">
+                                    <table class="table mb0">
+                                        <tbody id="">
+                                            <tr>
+                                                <td style="width:20%;">cpu</td>
+                                                <td style="width:40%;">健康</td>
+                                                <td>详情</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">内存</td>
+                                                <td style="width:40%;">健康</td>
+                                                <td>详情</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">风扇</td>
+                                                <td style="width:40%;">健康</td>
+                                                <td>详情</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">电源</td>
+                                                <td style="width:40%;">健康</td>
+                                                <td>详情</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+       </div>
+        <div class="div-b">
+            <div class="king-block king-block-themed bk-ranger-box mb10" id="list_1574215070828">
+                            <div class="king-block-header king-success">
+                                <h3 class="king-block-title pt10 pb10">
+                                    <span class="fa fa-star-half-full mr5" ></span>设备信息</h3>
+                            </div>
+                            <div class="ranger-wrapper">
+
+                                <div style="height:220px; overflow: auto;" class="ranger-box">
+                                    <table class="table mb0">
+                                        <tbody id="">
+                                            <tr>
+                                                <td style="width:20%;">ip地址</td>
+                                                <td style="width:40%;">192.168.0.1</td>
+                                                <td>详情</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">型号</td>
+                                                <td style="width:40%;">a11</td>
+                                                <td>IBM</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">OS版本</td>
+                                                <td style="width:40%;">1.11</td>
+                                                <td>详情</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:20%;">管理员</td>
+                                                <td style="width:40%;">admin</td>
+                                                <td>详情</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+       </div>
+        <div class="div-c">
+           <div id="c" style="height: 100%"></div>
+       </div>
+        <div class="div-d">
+           <div id="d" style="height: 100%"></div>
+       </div>
+         <div class="div-e">
+             <div class="king-block king-block-themed bk-ranger-box mb10" id="list_1574215094702">
+                            <div class="king-block-header king-danger">
+                                <h3 class="king-block-title pt10 pb10">
+                                    <span class="fa fa-sitemap mr5"></span>告警信息日志表</h3>
+                            </div>
+                            <div class="ranger-wrapper">
+                                <table class="table mb0 pr15 ranger-header-box">
+                                    <thead>
+                                        <tr>
+                                            <th style="width:20%;">节点名称</th>
+                                            <th style="width:70%;">详情</th>
+                                            <th style="width:10%;">时间</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div style="height:190px; overflow: auto;" class="ranger-box">
+                                    <table class="table mb0">
+                                        <tbody id="">
+                                            <tr>
+                                                <td style="width:20%;">节点1</td>
+                                                <td style="width:60%;">网络故障</td>
+                                                <td style="width:15%;">2019-11-16 15:35:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td >节点2</td>
+                                                <td >网络故障</td>
+                                                <td>2019-11-15 16:35:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td >节点3</td>
+                                                <td >网络故障</td>
+                                                <td>2019-11-11 18:35:21</td>
+                                            </tr>
+                                            <tr>
+                                                <td >节点4</td>
+                                                <td >网络故障</td>
+                                                <td>2019-11-10 12:35:21</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+       </div>
+         <div class="div-f">
+       </div>
+<script>
+    var dom1 = document.getElementById("c");
+            var myChart1 = echarts.init(dom1);
+            option1 = {
+                 title : {
+                    text: '端口流量',
+                    subtext: '',
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['11:10', '11:20', '11:30', '11:40', '11:50', '12:00', '12:10']
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [{
+
+                    data: [820, 932, 901, 934, 1290, 1330, 1320],
+                    type: 'line',
+                    areaStyle: {}
+                }]
+            };
+            setInterval(function () {
+                option1.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+                myChart1.setOption(option1, true);
+            },2000);
+            if (option1 && typeof option1 === "object") {
+                myChart1.setOption(option1, true);}
+                <!---------------->
+            var dom2 = document.getElementById("d");
+            var myChart2 = echarts.init(dom2);
+            option2 = {
+                title : {
+                    text: '历史趋势表',
+                    subtext: '汇总对比'
+                },
+                tooltip : {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data:['端口流量','互联网出口流量']
+                },
+                toolbox: {
+                    show : true,
+                    feature : {
+                        dataView : {show: true, readOnly: false},
+                        magicType : {show: true, type: ['line', 'bar']},
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+                calculable : true,
+                xAxis : [
+                    {
+                        type : 'category',
+                        data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'端口流量',
+                        type:'bar',
+                        data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                        markPoint : {
+                            data : [
+                                {type : 'max', name: '最大值'},
+                                {type : 'min', name: '最小值'}
+                            ]
+                        },
+                        markLine : {
+                            data : [
+                                {type : 'average', name: '平均值'}
+                            ]
+                        }
+                    },
+                    {
+                        name:'互联网出口流量',
+                        type:'bar',
+                        data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                        markPoint : {
+                            data : [
+                                {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183},
+                                {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
+                            ]
+                        },
+                        markLine : {
+                            data : [
+                                {type : 'average', name : '平均值'}
+                            ]
+                        }
+                    }
+                ]
+            };
+            if (option2 && typeof option2 === "object") {
+                myChart2.setOption(option2, true);}
+
+</script>
+
+
+</body>
+
+</html>

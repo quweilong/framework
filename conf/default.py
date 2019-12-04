@@ -19,7 +19,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 
 """
-
 import os
 import sys
 # Import global settings to make it easier to extend settings.

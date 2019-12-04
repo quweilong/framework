@@ -43,3 +43,7 @@ try:
             locals()[saas_setting] = getattr(saas_module, saas_setting)
 except:
     pass
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR,'static').replace('\\','/')
+# )
